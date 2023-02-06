@@ -1,0 +1,65 @@
+
+.page {
+   background-image: url(../img/Handmade\ craft\ diy\ BIG.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   
+}
+
+.wrapper1{
+width: 80vw;
+background: rgb(253, 248, 249);
+
+display: flexbox;
+flex-wrap: wrap;
+text-align: center;
+justify-items: center;
+margin-left: auto;
+margin-right: auto;
+padding: 100px 0 0 0;
+}
+.button{
+font-size: 20px;
+font-weight: 600;
+background: salmon;
+border-radius: 10px;
+padding: 10px;
+width: 50vw;
+margin-top: 15px;
+color: white;
+}
+.form_button{
+   margin-bottom: 10px;
+}
+.main-form__label {
+	display: block;
+	margin: 10px 0px 5px 0px;
+   font-size: 16px;
+   padding: 2px;
+  
+}
+.input {
+   width: 50vw;
+   font-family: inherit;
+	min-height: 40px;
+	line-height: 40px;
+	padding: 0px 15px;
+	border: 1px solid salmon;
+	border-radius: 3px;
+}
+.invalid{
+   border-color: red;
+}
+
+.main-form__error{
+   color:red;
+   font-size: 10px;
+}
+.textarea__item {
+	width: 50vw;
+	height: 150px;
+	padding: 10px;
+	font-size: 18px;
+   border: 1px solid salmon;
+	border-radius: 3px;
+}

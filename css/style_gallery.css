@@ -1,0 +1,76 @@
+/*
+* Photo Gallery — Practice
+* CSS Styles
+*
+* Start typing your code under these comments
+*/
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.photo{
+    float: left;
+    width: 33.333333%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.photo img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(223, 221, 221);
+    box-sizing: border-box;
+}
+.photo a:hover{
+    opacity: 0.5;
+}
+.photo a{
+    position: relative;
+    display: block;
+}
+.photo a:after{
+    content: '';
+    background: transparent url(../img/gallery/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.photo:hover> a:after{
+    visibility: visible;
+}
+.photo figcaption {
+    font-family: 'Aladin' sans-serif;
+    color: #261869
+    text-align: center;
+    margin-top: 15px;
+    font-size: large;
+    font-weight: bold;
+    }
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: rgb(174, 171, 171);
+    text-align: center;
+     margin: 25px 0;
+     text-shadow: 1px rgb(82, 82, 82) 1px rgb(82, 82, 82) ;
+}
+body{
+    font-family: 'Open Sans' sans-serif;
+}
+#gallery {
+    margin-bottom: 50px;
+}
+#gallery:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
