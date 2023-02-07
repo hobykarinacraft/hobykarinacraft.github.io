@@ -1,8 +1,5 @@
-// Описати html форму реєстрації де потрібно вказати: 
-// ім’я користувача, логін, пошту,  пароль. Додати кнопку відправки даних. 
-// При натисненні на кнопку виконати перевірку введення інформації у 
-// всі поля, якщо пусто або поле має менше 4 символів, відобразити це
-//  у вигляді відповідного підпису біля кнопки та перервати відправку форми.
+//  html форма реєстрації 
+//  виконання перевірки введення інформації у всі поля
 
 
 const mainForm = document.forms.main;
@@ -11,11 +8,8 @@ const mainFormInput = mainForm.nameInput;
 
 const inputEmail = mainForm.nameEmail;
 
-const inputLogin = mainForm.nameLogin;
-
 
 const mainformInputPlaceholder = mainFormInput.placeholder;
-
 
 
 mainForm.addEventListener("submit", function (event) {
@@ -54,13 +48,12 @@ function emailTest(input) {
 
 
 
-
-
-
 //8 На сторінці розмістити текстове поле input.
 //  При натисненні клавіші Enter введений текст записується
 // нижче у вигляді абзацу під input, а вміст поля input очищається.
 
+
+//Відправка коментарів на сайт
 let input = document.querySelector('.input');
 function writeComment(event) {
 
@@ -102,3 +95,4 @@ txtItem.addEventListener("input", txtSetCounter);
 function txtSetCounter() {
    const txtCounterResult = txtItemLimit - txtItem.value.length;
    txtCounter.innerHTML = txtCounterResult;
+}

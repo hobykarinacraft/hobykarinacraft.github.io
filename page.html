@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HOBBY Karina CRAFT - Легко та сучасно</title>
+   <title>Як зв'язати мітенки крючком легко</title>
    <!--description-->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/style.header_footer.css">
@@ -20,22 +20,23 @@
             <div class="header_body">
 
                <a href="index.home.html" target="_blank" class="header_logo">
-                  <img src="../img/header/logo.png">
+                  <img src="img/header/logo-web.gif">
                </a>
                <div class="menu-btn">
                   <span></span>
                   <span></span>
                   <span></span>
-
                </div>
+
+
                <div class="menu">
                   <nav class="header_menu">
                      <ul class="header_list">
-                        <li><a href="index.home.html" class="header_link">Головна</a></li>
+                        <li><a href="index.html" class="header_link">Головна</a></li>
                         <li><a href="#" class="menu_link">Рукоділля</a> </li>
-                        <li><a href="craft.idea.html" class="header_link">Ідеї</a></li>
-                        <li><a href="craft.gallery.html" target="blank" class="header_link">Галерея</a></li>
-                        <li><a href="craft.contacts.html" class="header_link">Контакти</a></li>
+                        <li><a href="idea.html" class="header_link">Ідеї</a></li>
+                        <li><a href="gallery.html" target="blank" class="header_link">Галерея</a></li>
+                        <li><a href="contacts.html" class="header_link">Контакти</a></li>
                      </ul>
                   </nav>
                </div>
@@ -46,46 +47,40 @@
 
       <main class="page">
 
-
-      </main>
-
-      <section class="page__store card">
-         <div class="card__container">
-            <div class="card__body body-store">
-               <div class="body-card__header">
-                  <div class="main_content">Нове на сайті</div>
-                  <a href="" class="body-card__gall">Галерея</a>
+         <div class="main_container">
+            <div class="main_decor">
+               <img src="img/header/Handmade  Header .jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="content_input">
+               <div class="main_content">
+                  <h1> <span> </span> </h1>
                </div>
-               <div class="body-card__items">
-                  <div class="body-card__item item">
-                     <a href="" class="item__image">
-                        <img src="img/recent/bracelet_K_mini.png" alt="Item">
-                     </a>
-                     <a href="" class="item__title"> Як сплести браслет з бісеру з іменем</a>
-                     <div class="item__price">Браслет з бісеру зі своїм іменем може сплести кожен. Детальний опис та
-                        схема.</div>
-                  </div>
-                  <div class="body-card__item item">
-                     <a href="" class="item__image">
-                        <img src="img/recent/hat_rose.png" alt="Item">
-                     </a>
-                     <a href="" class="item__title">Як зв'язати пов'язку крючком</a>
-                     <div class="item__price">Зв'язати пов'язку крючком під силу кожному. Пов'яка вам знадобиться у
-                        прохолодну погоду, а також
-                        вона
-                        буде прикрашати ваше обличчя.</div>
-                  </div>
-                  <div class="body-card__item item">
-                     <a href="" class="item__image">
-                        <img src="img/recent/biser_flower_mini.png" alt="Item">
-                     </a>
-                     <a href="" class="item__title">Як сплести квітку з бісеру</a>
-                     <div class="item__price">Всього 3 кольори бісеру і у вас з'явиться квітка з бісеру.</div>
-                  </div>
+               <div class="main_input">
+                  <input placeholder="Пошук" type="text" class="m_input" tabindex="1">
+                  <button class="search">Шукати</button>
                </div>
             </div>
          </div>
-   </div>
+
+
+      </main>
+
+      <section class="page_mitenka">
+         <div class="main_page">Стаття
+         <div class="leftpage"> Новини справа
+
+
+         </div>
+         <div class="sidebar2">Новини</div>
+
+
+            
+         </div>
+        
+
+
+
+
    </section>
 
    <section class="page__categories categories">
@@ -120,7 +115,8 @@
       </div>
    </section>
 
-   </main>
+   
+
    <div class="name_foot foot-name">
       <div class="foot-name_title">Ти можеш зробити своїми руками ВСЕ,<br> що забажаєш!</div>
 
@@ -128,7 +124,6 @@
 
       </div>
    </div>
-
 
    <footer class="footer">
       <div class="footer__container">
@@ -191,11 +186,16 @@
       </div>
    </footer>
 
-
    </div>
 
-
-   <script src="js/script.js"></script>
+   <script>
+      let menuBtn = document.querySelector('.menu-btn');
+      let menu = document.querySelector('.menu');
+      menuBtn.addEventListener('click', function () {
+         menuBtn.classList.toggle('active');
+         menu.classList.toggle('active');
+      })
+   </script>
 </body>
 
 </html>
